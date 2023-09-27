@@ -55,7 +55,7 @@ ROOT_URLCONF = 'devproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [Path.joinpath(BASE_DIR, 'C:/Users/ASUS/Desktop/final project/devproject/myapp/tamplates')],
+        'DIRS': [Path.joinpath(BASE_DIR, 'C:/Users/ASUS/Desktop/final project/djnago-mysql/devproject/myapp/tamplates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
