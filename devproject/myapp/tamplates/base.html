@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{% endblock %}</title>
+    <title>Welcome to Our Travel Guide</title>
     {% load static %}
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
-    <!-- DataTables CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
 
     <style>
-        /* Custom Styles */
         body {
-            background-color: #f8f9fa;
+            background-color: #de9ef2;
             font-family: Arial, sans-serif;
             display: flex;
-            align-items: center; /* Center vertically */
-            justify-content: center; /* Center horizontally */
+            align-items: center;
+            justify-content: center; 
             min-height: 100vh;
             margin: 0;
         }
 
         .container {
-            background-color: #fff;
+            background-color: #78d7ea;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center; /* Center the content inside the container */
+            box-shadow: 0 4px 6px rgb(209, 2, 250);
+            text-align: center;
         }
 
         .page-title {
-            background-color: #343a40;
+            background-color: #e098f8;
             color: #fff;
             padding: 15px;
             border-radius: 5px;
@@ -45,18 +42,20 @@
     <div class="page-title">
         <h4>Welcome to Our Travel Guide</h4>
     </div>
-    <!-- Main content block -->
+        <p>
+            You can post your places to visit in the province and recommend trips.
+        </p>
+        <a href="/about">About Us</a>
     {% block content %}{% endblock %}
 </div>
 
-<!-- JavaScript libraries -->
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
 
 <script>
     $(document).ready(function() {
-        // Initialize DataTable with custom options
         $('#bootstrapdatatable').DataTable({
             "aLengthMenu": [[3, 5, 10, 25, -1]],
             "iDisplayLength": 3
