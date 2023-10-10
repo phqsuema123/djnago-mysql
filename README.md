@@ -16,6 +16,19 @@ This website provides travel advice for independent tourists looking to explore 
     * mysql.connector.django [readmore](https://dev.mysql.com/doc/connector-python/en/connector-python-django-backend.html)
 
 ---
-## Methodology
+## Web page
+
+**Feed page "/"**
+
+You can read recommendations and details about travel in your interested province.
+
+**Add your recommend "/addnew"**
+
+You can share recommendations about travel based on your ideas.
+
+**About "/about"**
+
+Overview about this web and contact
+
 
 
