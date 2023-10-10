@@ -8,7 +8,7 @@
     {% csrf_token %}  
     <div class="container">  
         <div class="col-12">  
-        <h3>Enter Details</h3>  
+        <h3>Share recommendations for your travel guide.</h3>  
         </div>    
      
         <div class="mb-3"> 
@@ -16,19 +16,20 @@
             {{ form.titile }}   
         </div> 
         <div class="mb-3"> 
-            <label>Day travel:</label>  
+            <label>How many days traveling:</label>  
             {{ form.day_travel }}   
         </div>
         <div class="mb-3"> 
-            <label>Budget:</label>  
+            <label>
+                Budget for travel:</label>  
             {{ form.budget }}   
         </div>
         <div class="mb-3"> 
-            <label>Detail:</label>  
+            <label>Detail for travel:</label>  
             {{ form.detail }}   
         </div>
         <div class="mb-3"> 
-            <button type="submit" class="btn btn-primary">Submit</button>    
+            <button type="submit" class="btn btn-primary">Share</button>    
         </div> 
     </div>  
     </form>  

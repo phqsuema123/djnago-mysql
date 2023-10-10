@@ -19,7 +19,11 @@ def addnew(request):
 def index(request):  
     employees = datas.objects.all()  
     return render(request, "show.html", {'employees': employees}) 
- 
+
+def manage(request):  
+    employees = datas.objects.all()  
+    return render(request, "manage.html", {'employees': employees}) 
+
 def edit(request, id):  
     employee = datas.objects.get(id=id)  
     return render(request,'edit.html', {'employee':employee})  
